@@ -10,14 +10,13 @@
 name: LEDE-ORIGINAL
 
 on:
-  schedule:
-    - cron: 0 20 * * *
   push:
     branches: 
       - master
-  #     ↑↑↑ 改成你的分支名, 一般是master
-  release:
-    types: [published]
+  # schedule:
+  #   - cron: 0 20 * * *
+  # release:
+  #   types: [published]
 
 jobs:
   build:
